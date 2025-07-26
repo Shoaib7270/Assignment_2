@@ -10,7 +10,38 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+.navbar{
+    height: 71px;
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-image{
+    height: 82px;
+    width: 135px;
+}
+.nav-text-items ul{
+    height: 60px;
+    width: 415px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
 
+.home-button{
+    font-weight: bold;
+}
+.shadow-nav{
+    color: #8987A1;
+}
 
 
 .header-section{
@@ -171,6 +202,98 @@
 .main-section4{
     height: 424px;
     width: 1140px;
-    border: 2px solid red;
     margin: 120px auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr) 2fr;
+    gap: 28px;
+}
+.primary-images{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
+.image1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url("assets/deal-bloom.png");
+    border-radius: 15px;
+}
+.image2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url("assets/deal-ana.png");
+    border-radius: 15px;
+}
+.primary-images h1{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.primary-images h2{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: -10px;
+    color: whitesmoke;
+}
+.secondary-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url("assets/deal-zabo.png");
+    border-radius: 30px;
+
+}
+.secondary-image h1{
+    font-size: 40px;
+    margin-top: -20px;
+    color: whitesmoke;
+}
+.secondary-image h2{
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: -15px;
+    color: whitesmoke;
+}
+
+/* end of main-section4 */
+/* starting of main-section5 */
+
+.main-section5{
+    height: 533px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url("assets/news-letter-bg.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-section5 h1{
+    font-size: 50px;
+    margin-top: -20px;
+    color: whitesmoke;
+}
+input[type="email"]{
+    height: 50px;
+    width: 644px;
+    padding-left: 20px;
+}
+input::placeholder {
+  font-size: 16px;
+}
+.submit-button{
+    height: 50px;
+    width: 186px;
+    color: #FFFFFF;
+    background-color: #E95A08;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    
 }
